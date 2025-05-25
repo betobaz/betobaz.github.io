@@ -22,13 +22,15 @@
       text-align: center;
       position: relative;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-image: url('./paper-textured.jpg');
+      ;
     }
 
     .top-flowers {
       background: url('./flowers.png') no-repeat center top;
       background-size: cover;
-      height: 120px;
+      height: 207px;
+      opacity: .8;
     }
 
     h1 {
@@ -62,7 +64,7 @@
     }
 
     .date-time div {
-      flex: 1 1 auto;
+      text-transform:uppercase
     }
 
     .envelope {
@@ -104,30 +106,68 @@
         flex: 1 1 100%;
       }
     }
+    .date{
+        text-transform: uppercase;
+    }
+    .date > div{
+        display: inline-block;
+        font-size: 1.3em;
+    }
+    .date .side{
+        width: 25%;
+        border-top: .2em solid #000;
+        border-bottom: .2em solid #000;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-bottom: .5em;
+        position: relative;
+        top: -2em;
+    }
+    .date .day{
+        font-size: 3em;
+    }
+    .iglesia{
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 1em;
+        
+    }
+    .recepcion{
+        padding-top: 1em;
+        text-transform: uppercase;
+    }
   </style>
 </head>
 <body>
   <div class="invitation">
     <div class="top-flowers"></div>
-    <h2>¡Nos casamos!</h2>
     <div style="transform: rotate(-10deg);">
         <div class="names">Fabiola</div>
-        <div class="names" style="margin-top:-0.7em;color:#ccc;font-size:5em" >&</div>
+        <div class="names" style="margin-top:-0.7em;color:#ccc;font-size:4em" >&</div>
         <div class="names" style="margin-top:-0.5em">Pedro</div>
     </div>
     
-    <p>Queremos compartir contigo la felicidad de nuestra unión</p>
+    <p style="text-transform:uppercase; padding: 0em 8em;">Nos gustaría que nos acompañes en este día tan especial</p>
 
-    <div class="date-time">
-      <div>
-        <strong>Día:</strong>
-        <p>26 de julio 2025</p>
-      </div>
-      <div>
-        <strong>Hora:</strong>
-        <p>6:00 P.M.</p>
-      </div>
+    <div class="date">
+       
+        <div class="side">Sábado</div>
+        <div>
+            <div class="month-year">julio</div>
+            <div class="day">26</div>
+            <div class="month-year">2025</div>
+        </div>
+        <div class="side">18:00 hrs.</div>
+        
     </div>
+    <div class="iglesia">
+        Iglesia de San Juan Bautista, Nogales, Ver.
+    </div>
+    <div class="recepcion">
+        <div>A continuacion lo celebraremos todos juntos en el</div>
+        <div style="font-weight: bold;">salón Quijote</div>
+    </div>
+    
     <hr style="border: none; border-top: 2px solid #b38b59; margin: 20px 0;" />
 
     <div class="icons">
