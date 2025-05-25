@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación de Boda - Fabiola y Pedro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #fefefe;
+      color: #2f2f2f;
+    }
+
+    .invitation {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    }
+
+    .top-flowers {
+      background: url('https://i.imgur.com/NpDiKMb.png') no-repeat center top;
+      background-size: cover;
+      height: 120px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-top: 20px;
+      font-family: 'Georgia', cursive;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .names {
+      font-size: 2rem;
+      font-family: 'Brush Script MT', cursive;
+      margin: 20px 0;
+    }
+
+    .date-time {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-size: 1.1rem;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .date-time div {
+      flex: 1 1 auto;
+    }
+
+    .envelope {
+      margin: 10px 0;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    .icons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .icon-item {
+      text-align: center;
+      margin: 15px;
+    }
+
+    .icon-item i {
+      font-size: 2rem;
+      color: #b38b59;
+      margin-bottom: 8px;
+    }
+
+    .icon-item p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 500px) {
+      .date-time {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .icon-item {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="invitation">
+    <div class="top-flowers"></div>
+    <h2>¡Nos casamos!</h2>
+    <div class="names">Fabiola y Pedro</div>
+    <p>Queremos compartir contigo la felicidad de nuestra unión</p>
+
+    <div class="date-time">
+      <div>
+        <strong>Día:</strong>
+        <p>26 de julio 2025</p>
+      </div>
+      <div>
+        <strong>Hora:</strong>
+        <p>6:00 P.M.</p>
+      </div>
+    </div>
+
+    <div class="envelope">
+      📩 Lluvia de sobres
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 20px 0;" />
+
+    <div class="icons">
+      <div class="icon-item">
+        <i class="fab fa-whatsapp"></i>
+        <p>Confirmar<br/>(2 pases)</p>
+      </div>
+      <div class="icon-item">
+        <i class="fas fa-church"></i>
+        <p>Ubicación Misa</p>
+      </div>
+      <div class="icon-item">
+        <i class="fas fa-heart"></i>
+        <p>Ubicación Recepción</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
